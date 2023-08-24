@@ -1,4 +1,6 @@
 
+/* ANIMACAO PAGE */
+
 window.sr = ScrollReveal({ reset: true });
 
 sr.reveal(".sobre", {duration: 2000});
@@ -8,6 +10,8 @@ sr.reveal(".projetos", {duration: 2000});
 sr.reveal(".habilidades", {duration: 2000});
 
 sr.reveal(".contato", {duration: 2000});
+
+/* DESCRICAO HABILIDADES */
 
 const skills = document.querySelectorAll('.skill-box');
 const descricao = document.querySelector('.texto-descricao');
@@ -30,3 +34,24 @@ skills.forEach(  (elemento, index) => {
         descricao.innerHTML = 'Passe o mouse pela habilidade desejada para ler a descrição.';
     } )
 } );
+
+/* MENU MOBILE */
+
+const menuDiv = document.getElementById('menu-mobile')
+const btnMenu = document.getElementById('btn-menu')
+
+menuDiv.addEventListener('click', animar)
+
+function animar(){
+    menuDiv.classList.toggle('abrir')
+    btnMenu.classList.toggle('ativar')
+}
+
+
+
+
+
+    
+
+
+
