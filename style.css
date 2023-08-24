@@ -1,0 +1,501 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Poppins", sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #171810;
+    height: 100vh;
+}
+
+.background{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #171810;
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    align-items: center;
+    text-align: center;
+    padding-top: 1rem;
+    padding: 10px 3%;
+}
+
+
+.cabecalho-link{
+    display: flex;
+    gap: 4rem;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.cabecalho-link a{
+    color: #fff;
+    font-size: 18px;
+}
+
+.cabecalho-link a:hover{
+    color: #5CE1E6;
+    transition: 0.3s all;
+}
+
+.logo img{
+    height: 50px;
+    background: transparent;
+    display: inline-flex;
+    justify-content: center;
+    cursor: pointer; 
+    margin-bottom: 15px; 
+    margin-right: 40px;
+}
+
+button {
+    color: #5CE1E6;
+    background: transparent;
+    border: solid 3px #5CE1E6;
+    border-radius: 50px;
+    font-size: 18px;
+    cursor: pointer;
+    width: 250px;
+    padding: 5px;
+}
+
+.botao{
+    width: 120px;
+}
+
+button:hover{
+    background-color: #5CE1E6;
+    color: #fff;
+    transition: 0.5s;
+}
+
+/* Caixa texto e foto perfil */
+
+.container-text .flex{
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+    padding: 3%
+}
+
+.text h3{
+    color: #fff;
+    font-size: 20px;
+}
+
+.text h1{
+    color: #fff;
+    margin-top: 10px;
+    font-size: 40px;
+}
+
+.text span{
+    color: #5CE1E6;
+}
+
+.text p{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.redes-sociais{
+    margin-top: 10px;
+}
+
+.redes-sociais a{
+    color: #5CE1E6;
+    margin-right: 30px;
+    font-size: 30px;
+}
+
+.redes-sociais a:hover{
+    color: #fff;
+    transition: 0.5s;
+}
+
+.btn{
+    margin-top: 10px;
+}
+
+.foto-perfil img{
+    width: 350px;
+    height: auto;
+    animation: float-up-down 2s infinite;
+}
+
+@keyframes float-up-down{
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+
+@keyframes blink{
+    0%, 100% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+.container-text span::after{
+    content: "|";
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 5px;
+    animation: blink 1s infinite;
+    font-weight: 400;
+    height: 71px;
+}
+
+/* Estilo Sobre */
+
+section.sobre{
+    margin-top: 70px;
+    padding: 120px 3%;
+    height: auto; 
+    overflow: auto;
+    box-shadow: 0 0 40px 10px #ffffff3a;
+    visibility: hidden;
+}
+
+.sobre .titu{
+    color: #5CE1E6;
+    font-size: 40px;
+    text-align: center;
+}
+
+section.sobre .flex{
+    align-items: center;
+    gap: 90px;
+    margin-top: 60px;
+}
+
+.sobre .txt-sobre{
+    color: #fff;
+}
+
+.sobre .txt-sobre h2{
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+
+.sobre .txt-sobre h2 span{
+    color: #5CE1E6;
+    display: block;
+}
+
+.sobre .txt-sobre p{
+    margin: 20px 0;
+    text-align: justify;
+}
+
+.img-sobre img{
+    height: 200px;
+    padding-left: 28px;
+}
+
+/* Estilos Projeto */
+
+section.projetos{
+    padding: 120px 3%;
+    box-shadow: 0px 0px 40px 10px hsla(0, 0%, 100%, 0.227);
+    visibility: hidden;
+}
+
+section.projetos .flex{
+    gap: 100px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+h2.titulo{
+    color: #fff;
+    font-size: 40px;
+    text-align: center;
+}
+
+.projetos .background h2 span{
+    color: #5CE1E6
+}
+
+.img-proj{
+    width: 600px;
+    height: 360px;
+    background-color:  #5CE1E6;
+    color: #000000;
+    background-size: cover;
+    background-position: 50% 0%;
+    border-radius: 40px;
+    transition: 8s;
+    cursor: pointer;
+    position: relative;
+}
+
+.img-proj:hover{
+    background-position: 100% 100%;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #00000045;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 600;
+    opacity: 0;
+    transition: 1.5s;
+}
+
+.overlay:hover{
+    opacity: 1;
+}
+
+/* Estilo Habilidades */
+
+section.habilidades{
+    padding: 120px 3%;
+    visibility: hidden;
+}
+
+.habilidades .titu{
+    color: #5CE1E6;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 90px;
+}
+
+
+.skills-descricao {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap:50px;
+    padding-bottom: 70px;
+}
+
+.conteiner-skills {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 37px;
+    max-width: 55%;
+    cursor: pointer;
+    font-size: 80px;
+    color: #5CE1E6;
+    flex-basis: calc(33.33% - 20px);
+    
+}
+
+.conteiner-skills :hover{
+    color: #fff;
+    background-color: #5CE1E6;
+    transition: 0.5s;
+}
+
+.skill-box {
+    height: 106px;
+    width: 106px;
+    background-color: #C4C4C4;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: ease 0.3s;
+}
+
+.conteiner-descricao {
+    color: white;
+    font-family: 'Quando', serif;
+    font-size: 25px;
+    max-width: 40%;
+    height: 0px;
+}
+
+/* FOOTER */
+
+footer{
+    padding: 40px 3%;
+    box-shadow: 0px 0px 40px 10px hsla(0, 0%, 100%, 0.253);
+    visibility: hidden;
+}
+
+footer .flex{
+    justify-content: space-between;
+}
+
+footer .line-footer{
+    padding: 20px 0;
+}
+
+.borda{
+    border-top: 2px solid #5CE1E6;
+}
+
+footer .line-footer p i{
+    color: #5CE1E6;
+    font-size: 22px;
+}
+
+footer .line-footer p a{
+    color: #fff;
+}
+
+.logo-footer img{
+    height: 50px;
+}
+
+
+@media screen and (max-width: 923px){
+    .container-text{
+        padding-top: 2px;
+    }
+}
+
+@media screen and (max-width: 928px){
+
+    .flex{
+        flex-direction: column-reverse;
+    }
+
+    /* HEADER */
+    .btn-contato, .cabecalho-link{
+        display: none;
+    }
+
+    .logo img{
+        padding: 1%;
+    }
+
+    .container-text{
+        padding-top: 140px;
+    }
+
+    .container-text .flex{
+        padding: 8%;
+    }
+
+    .foto-perfil img{
+        width: 100%;
+    }
+
+    /* SOBRE */
+
+    .sobre .txt-sobre{
+        padding: 8%
+    }
+
+    .sobre .txt-sobre p{
+        font-size: 13px;
+        line-height: 20px;
+    }
+
+    .img-sobre img{
+        height: 150px;
+        padding-left: 0px;
+    }
+
+    /* PROJETOS */
+
+    .img-proj{
+        width: 100%;
+        background-position: center;
+    }
+
+    /* HABILIDADES */
+
+    .conteiner-descricao {
+        height: 260px;
+    }
+
+    .skills-descricao {
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 0 auto;
+        gap:50px;
+        padding-bottom: 70px;
+        align-items: center;
+    }
+
+    .skills-descricao p {
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .conteiner-skills {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 37px;
+        max-width: 300px;
+    }
+
+    .conteiner-descricao {
+        max-width: 300px;
+    }
+
+    /* FOOTER */
+
+    footer .flex{
+        flex-direction: column;
+    }
+
+    footer .line-footer{
+        text-align: center;
+    }
+
+    footer .line-footer .redes-sociais{
+        margin-left: 35px;
+    }
+}
+
+/* ESTILO MENU MOBILE */
+
+.menu-mobile{
+    background-color: #171810;
+    backdrop-filter: blur(10px);  /* ESTILO MENU MOBILE */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: none;
+}
