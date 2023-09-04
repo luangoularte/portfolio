@@ -292,7 +292,7 @@ h2.titulo{
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 24px;
+    font-size: 28px;
     font-weight: 600;
     opacity: 0;
     transition: 1.5s;
@@ -339,7 +339,7 @@ section.habilidades{
 }
 
 .conteiner-skills :hover{
-    color: #fff;
+    color: #626262;
     background-color: #5CE1E6;
     transition: 0.5s;
 }
@@ -347,7 +347,7 @@ section.habilidades{
 .skill-box {
     height: 106px;
     width: 106px;
-    background-color: #C4C4C4;
+    background-color: #626262;
     border-radius: 20px;
     display: flex;
     justify-content: center;
