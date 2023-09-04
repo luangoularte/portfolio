@@ -261,7 +261,7 @@ h2.titulo{
 }
 
 .projetos .background h2 span{
-    color: #5CE1E6
+    color: #5CE1E6;
 }
 
 .img-proj{
@@ -296,6 +296,7 @@ h2.titulo{
     font-weight: 600;
     opacity: 0;
     transition: 1.5s;
+    text-align: center;
 }
 
 .overlay:hover{
