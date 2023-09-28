@@ -468,6 +468,10 @@ footer .line-footer p a{
         width: 100%;
         background-position: center;
     }
+    
+    .overlay{
+        opacity: 1;
+    }
 
     /* HABILIDADES */
 
