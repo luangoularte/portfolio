@@ -3,13 +3,33 @@
 
 window.sr = ScrollReveal({ reset: true });
 
-sr.reveal(".sobre", {duration: 2000});
+sr.reveal(".sobre", {duration: 3000});
 
-sr.reveal(".projetos", {duration: 2000});
+sr.reveal(".projetos", {duration: 3000});
 
-sr.reveal(".habilidades", {duration: 2000});
+sr.reveal(".habilidades", {duration: 3000});
 
-sr.reveal(".contato", {duration: 2000});
+sr.reveal(".contato", {duration: 3000});
+
+function checkAboutSection() {
+    var aboutSection = document.querySelector('.sobre');
+
+    if (isElementInViewport(aboutSection)) {
+        aboutSection.classList.add('animated');
+    }
+}
+
+function isElementInViewport(element) {
+    var rect = element.getBoundingClientRect();
+    return (
+        rect.top >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight)
+    );
+}
+
+window.addEventListener('scroll', checkAboutSection);
+
+checkAboutSection();
 
 /* DESCRICAO HABILIDADES */
 
