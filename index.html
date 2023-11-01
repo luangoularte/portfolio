@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://unpkg.com/scrollreveal"></script>
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
 </head>
 
 
@@ -18,7 +22,7 @@
         <header>
             <div class="logo">
                 <a href="index.html">
-                    <img src="images/LGlogo1.png" alt="minha png">
+                    <img src="images/LGlogo1.png" alt="minha png">  
                 </a>
             </div>
             <div class = "cabecalho-link">
@@ -97,71 +101,77 @@
     <main>
 
         <!--SOBRE-->
-        <section class = "sobre" id="sobre">
-            <div class="background">
-                <h2 class="titu">SOBRE</h2>
-                <div class="flex">
-                    <div class="img-sobre">
-                        <img src="images/LGlogo1.png" alt="minha png">
-                    </div>
+        <article class = "init-hidden">
+            <section class = "sobre" id="sobre">
+                <div class="background">
+                    <h2 class="titu">SOBRE</h2>
+                    <div class="flex">
+                        <div class="img-sobre">
+                            <img src="images/LGlogo1.png" alt="minha png">
+                        </div>
 
-                    <div class="txt-sobre">
-                        <h2>MUITO PRAZER, <span>SOU LUAN GOULARTE.</span></h2>
-                        <p>Meu nome é Luan, tenho 20 anos, faço Análise e Desenvolvimento de Sistemas na UNISC, 
-                        estou há pouco mais de um ano estudando programação e me apaixonei pela área, 
-                        tenho conhecimentos em Lógica de Programação, 
-                        Linguagem Python, C#, Banco de Dados SQL, HTML, CSS e JavaScript. 
-                        Atualmente estou focado em estudar Programação Mobile.</p>
-                        <p>Sou determinado, tenho muita vontade de aprender, tenho facilidade de trabalhar em grupo, 
-                        sou comunicativo e tenho consistência. Meu objetivo é conquistar meu primeiro estágio 
-                        para adquirir conhecimento no mercado de trabalho e construir uma carreira na área da tecnologia.</p>
-                    </div>
+                        <div class="txt-sobre">
+                            <h2>MUITO PRAZER, <span>SOU LUAN GOULARTE.</span></h2>
+                            <p>Meu nome é Luan, tenho 20 anos, faço Análise e Desenvolvimento de Sistemas na UNISC, 
+                            estou há pouco mais de um ano estudando programação e me apaixonei pela área, 
+                            tenho conhecimentos em Lógica de Programação, 
+                            Linguagem Python, C#, Banco de Dados SQL, HTML, CSS e JavaScript. 
+                            Atualmente estou focado em estudar Programação Mobile.</p> 
+                            <p>Sou determinado, tenho muita vontade de aprender, tenho facilidade de trabalhar em grupo, 
+                            sou comunicativo e tenho consistência. Meu objetivo é conquistar meu primeiro estágio 
+                            para adquirir conhecimento no mercado de trabalho e construir uma carreira na área da tecnologia.</p>
+                        </div>
 
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </article>
         <!--SOBRE-->
         
         <!--PROJETOS-->
-        <section class="projetos" id="projetos">
-            <div class="background">
-                <h2 class="titulo">MEUS <span>PROJETOS</span></h2>
-                <div class="flex">
-                    <a href="https://github.com/luangoularte/Automacao-Web-e-Busca-de-Infos.git" target="_blank" class="img-proj" style="background-image: url(./images/automacao.png);">
-                        <div class="overlay">Automação Web e Coleta de Informações</div>
-                    </a>
-                    <a href="https://github.com/luangoularte/analise-de-dados.git" target="_blank" class="img-proj" style="background-image: url(./images/analise.png);">
-                        <div class="overlay">Análise de Dados</div>
-                    </a>
+        <article class = "init-hidden">
+            <section class="projetos" id="projetos">
+                <div class="background">
+                    <h2 class="titulo">MEUS <span>PROJETOS</span></h2>
+                    <div class="flex">
+                        <a href="https://github.com/luangoularte/Automacao-Web-e-Busca-de-Infos.git" target="_blank" class="img-proj" style="background-image: url(./images/automacao.png);">
+                            <div class="overlay">Automação Web e Coleta de Informações</div>
+                        </a>
+                        <a href="https://github.com/luangoularte/analise-de-dados.git" target="_blank" class="img-proj" style="background-image: url(./images/analise.png);">
+                            <div class="overlay">Análise de Dados</div>
+                        </a>
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </article>
         <!--PROJETOS-->
 
         <!--HABILIDADES-->
-        <section class="habilidades" id="habilidades">
-            <div class="background">
-                <h2 class="titu">HABILIDADES</h2>
-                <div class="flex">
-                    <div class="skills-descricao">
-                        <div class="conteiner-skills">
-                            <div class="skill-box skill1 html-skill"><i class="fa-brands fa-html5"></i></div>
-                            <div class="skill-box skill2 css-skill"><i class="fa-brands fa-css3-alt"></i></div>
-                            <div class="skill-box skill3 js-skill"><i class="fa-brands fa-js"></i></div>
-                            <div class="skill-box skill4 bd-skill"><i class="fa-solid fa-database"></i></div>
-                            <div class="skill-box skill5 python-skill"><i class="fa-brands fa-python"></i></div>
-                            <div class="skill-box skill6 csharp-skill"><i class="fa-brands fa-microsoft"></i></div>
-                        </div>
-                        <div class="conteiner-descricao">
-                            <p class="texto-descricao">
-                                Passe o mouse pela habilidade desejada para ler
-                                a descrição.
-                            </p>
+        <article class = "init-hidden">
+            <section class="habilidades" id="habilidades">
+                <div class="background">
+                    <h2 class="titu">HABILIDADES</h2>
+                    <div class="flex">
+                        <div class="skills-descricao">
+                            <div class="conteiner-skills">
+                                <div class="skill-box skill1 html-skill"><i class="fa-brands fa-html5"></i></div>
+                                <div class="skill-box skill2 css-skill"><i class="fa-brands fa-css3-alt"></i></div>
+                                <div class="skill-box skill3 js-skill"><i class="fa-brands fa-js"></i></div>
+                                <div class="skill-box skill4 bd-skill"><i class="fa-solid fa-database"></i></div>
+                                <div class="skill-box skill5 python-skill"><i class="fa-brands fa-python"></i></div>
+                                <div class="skill-box skill6 csharp-skill"><i class="fa-brands fa-microsoft"></i></div>
+                            </div>
+                            <div class="conteiner-descricao">
+                                <p class="texto-descricao">
+                                    Passe o mouse pela habilidade desejada para ler
+                                    a descrição. 
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </article>
         <!--HABILIDADES-->
 
     </main>

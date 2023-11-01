@@ -200,7 +200,8 @@ section.sobre{
     height: auto; 
     overflow: auto;
     box-shadow: 0 0 40px 10px #ffffff3a;
-    visibility: hidden;
+    
+    /* visibility: hidden; */
 }
 
 .sobre .titu{
@@ -238,6 +239,7 @@ section.sobre .flex{
 .img-sobre img{
     height: 200px;
     padding-left: 28px;
+
 }
 
 /* Estilos Projeto */
@@ -245,7 +247,7 @@ section.sobre .flex{
 section.projetos{
     padding: 120px 3%;
     box-shadow: 0px 0px 40px 10px hsla(0, 0%, 100%, 0.227);
-    visibility: hidden;
+    /* visibility: hidden; */
 }
 
 section.projetos .flex{
@@ -307,7 +309,7 @@ h2.titulo{
 
 section.habilidades{
     padding: 120px 3%;
-    visibility: hidden;
+    /* visibility: hidden; */
 }
 
 .habilidades .titu{
@@ -372,7 +374,7 @@ section.habilidades{
 footer{
     padding: 40px 3%;
     box-shadow: 0px 0px 40px 10px hsla(0, 0%, 100%, 0.253);
-    visibility: hidden;
+    /* visibility: hidden; */
 }
 
 footer .flex{
@@ -543,7 +545,7 @@ footer .line-footer p a{
 .menu-mobile li a:hover{
     color: #5CE1E6;
     transition: 0.3s all;
-}
+} 
 
 .menu-mobile button{
     margin-top: 12px;
@@ -600,4 +602,15 @@ button.btn-menu.ativar .linha:nth-child(2){
     .btn-menu{
         display: block;
     }
+}
+
+/* SOBRE */
+
+.init-hidden{
+    opacity: 0;
+    transition: opacity 1s linear;
+}
+
+.init-hidden-off{
+    opacity: 1;
 }

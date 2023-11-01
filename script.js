@@ -1,6 +1,6 @@
 
 /* ANIMACAO PAGE */
-
+/*
 window.sr = ScrollReveal({ reset: true });
 
 sr.reveal(".sobre", {duration: 3000});
@@ -10,6 +10,8 @@ sr.reveal(".projetos", {duration: 3000});
 sr.reveal(".habilidades", {duration: 3000});
 
 sr.reveal(".contato", {duration: 3000});
+
+*/
 
 function checkAboutSection() {
     var aboutSection = document.querySelector('.sobre');
@@ -67,7 +69,23 @@ function animar(){
     btnMenu.classList.toggle('ativar')
 }
 
+/* NOVA ANIMAÇÃO DAS SEÇÕES */
 
+const observer = new IntersectionObserver(entries => {
+    console.log(entries)
+
+    Array.from(entries).forEach(entry => {
+        if (entry.intersectionRatio >= 0.3) {
+            entry.target.classList.add('init-hidden-off')
+        }
+    })
+    
+}, {
+    threshold: [0, .5, 1]
+})
+Array.from(document.querySelectorAll('.init-hidden')).forEach(element => {
+    observer.observe(element)
+})
 
 
 
