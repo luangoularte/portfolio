@@ -100,32 +100,47 @@ header{
     align-items: center;
     justify-content: space-between;
     height: 100vh;
-    padding: 3%
+    padding: 3%;
 }
 
 .text h3{
     color: #fff;
     font-size: 20px;
+
+    animation: slideInDown;
+    animation-duration: 1s; 
 }
 
 .text h1{
     color: #fff;
     margin-top: 10px;
     font-size: 40px;
+
+    animation: slideInLeft;
+    animation-duration: 1.5s; 
 }
 
 .text span{
     color: #5CE1E6;
+
+    animation: slideInLeft;
+    animation-duration: 2s; 
 }
 
 .text p{
     color: #fff;
     font-size: 20px;
     font-weight: 500;
+
+    animation: slideInLeft; 
+    animation-duration: 2s; 
 }
 
 .redes-sociais{
     margin-top: 10px;
+
+    animation: slideInUp; 
+    animation-duration: 2.5s; 
 }
 
 .redes-sociais a{
@@ -149,6 +164,9 @@ header{
     cursor: pointer;
     width: 250px;
     padding: 5px;
+
+    animation: slideInUp; 
+    animation-duration: 3s; 
 }
 
 .btn:hover{
@@ -162,6 +180,8 @@ header{
     height: auto;
     animation: float-up-down 2s infinite;
 }
+
+
 
 @keyframes float-up-down{
     0%, 100% {
@@ -200,7 +220,7 @@ section.sobre{
     height: auto; 
     overflow: auto;
     box-shadow: 0 0 40px 10px #ffffff3a;
-    
+    overflow-x: hidden;
     /* visibility: hidden; */
 }
 
@@ -242,6 +262,7 @@ section.sobre .flex{
 
 }
 
+
 /* Estilos Projeto */
 
 section.projetos{
@@ -267,6 +288,19 @@ h2.titulo{
 }
 
 .img-proj{
+    width: 600px;
+    height: 360px;
+    background-color:  #5CE1E6;
+    color: #000000;
+    background-size: cover;
+    background-position: 50% 0%;
+    border-radius: 40px;
+    transition: 8s;
+    cursor: pointer;
+    position: relative;
+}
+
+.img-proj1{
     width: 600px;
     height: 360px;
     background-color:  #5CE1E6;
@@ -309,6 +343,7 @@ h2.titulo{
 
 section.habilidades{
     padding: 120px 3%;
+    overflow-x: hidden;
     /* visibility: hidden; */
 }
 
@@ -471,6 +506,11 @@ footer .line-footer p a{
         background-position: center;
     }
     
+    .img-proj1{
+        width: 100%;
+        background-position: center;
+    }
+
     .overlay{
         opacity: 1;
     }
@@ -604,7 +644,7 @@ button.btn-menu.ativar .linha:nth-child(2){
     }
 }
 
-/* SOBRE */
+/* ANIMAÇÃO PÁGINA */
 
 .init-hidden{
     opacity: 0;
@@ -614,3 +654,4 @@ button.btn-menu.ativar .linha:nth-child(2){
 .init-hidden-off{
     opacity: 1;
 }
+

@@ -1,37 +1,4 @@
 
-/* ANIMACAO PAGE */
-/*
-window.sr = ScrollReveal({ reset: true });
-
-sr.reveal(".sobre", {duration: 3000});
-
-sr.reveal(".projetos", {duration: 3000});
-
-sr.reveal(".habilidades", {duration: 3000});
-
-sr.reveal(".contato", {duration: 3000});
-
-*/
-
-function checkAboutSection() {
-    var aboutSection = document.querySelector('.sobre');
-
-    if (isElementInViewport(aboutSection)) {
-        aboutSection.classList.add('animated');
-    }
-}
-
-function isElementInViewport(element) {
-    var rect = element.getBoundingClientRect();
-    return (
-        rect.top >= 0 &&
-        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight)
-    );
-}
-
-window.addEventListener('scroll', checkAboutSection);
-
-checkAboutSection();
 
 /* DESCRICAO HABILIDADES */
 
@@ -71,12 +38,13 @@ function animar(){
 
 /* NOVA ANIMAÇÃO DAS SEÇÕES */
 
+
 const observer = new IntersectionObserver(entries => {
     console.log(entries)
 
     Array.from(entries).forEach(entry => {
         if (entry.intersectionRatio >= 0.3) {
-            entry.target.classList.add('init-hidden-off')
+            entry.target.classList.add('init-hidden-off');
         }
     })
     
@@ -88,8 +56,86 @@ Array.from(document.querySelectorAll('.init-hidden')).forEach(element => {
 })
 
 
+/* ANIMAÇÕES SEÇÃO SOBRE */
 
-    
+window.addEventListener('scroll', function() {
+    const sobreSection = document.getElementById('sobre');
+    const scrollTop = window.scrollY;
+    const offsetTop = sobreSection.offsetTop;
+    const triggerPoint = offsetTop - 400; 
+
+    if (scrollTop >= triggerPoint && scrollTop < triggerPoint + sobreSection.offsetHeight) {
+        const elementimgsobre = document.querySelector('.img-sobre');
+        elementimgsobre.classList.add('animate__animated', 'animate__slideInLeft');
+        elementimgsobre.style.animationDuration = '2.5s';
+
+        const elementtxt = document.querySelector('.txt-sobre');
+        elementtxt.classList.add('animate__animated', 'animate__slideInRight');
+        elementtxt.style.animationDuration = '2.5s';
+    }
+});
+
+
+/* ANIMAÇÕES SEÇÃO PROJETOS */
+
+window.addEventListener('scroll', function() {
+    const projetosSection = document.getElementById('projetos');
+    const scrollTop = window.scrollY;
+    const offsetTop = projetosSection.offsetTop;
+    const triggerPoint = offsetTop - 400; // 
+
+    if (scrollTop >= triggerPoint && scrollTop < triggerPoint + projetosSection.offsetHeight) {
+        const elementimgproj = document.querySelector('.img-proj');
+        elementimgproj.classList.add('animate__animated', 'animate__slideInUp');
+        elementimgproj.style.animationDuration = '2.5s';
+
+        const elementimgproj1 = document.querySelector('.img-proj1');
+        elementimgproj1.classList.add('animate__animated', 'animate__slideInUp');
+        elementimgproj1.style.animationDuration = '2.5s';
+    }
+});
+
+
+/* ANIMAÇÕES SEÇÃO HABILIDADES */
+
+
+window.addEventListener('scroll', function() {
+    const habilidadesSection = document.getElementById('habilidades');
+    const scrollTop = window.scrollY;
+    const offsetTop = habilidadesSection.offsetTop;
+    const triggerPoint = offsetTop - 400; 
+
+    if (scrollTop >= triggerPoint && scrollTop < triggerPoint + habilidadesSection.offsetHeight) {
+        const elementtext = document.querySelector('.texto-descricao');
+        elementtext.classList.add('animate__animated', 'animate__slideInRight');
+        elementtext.style.animationDuration = '2.5s';
+
+        const elementhtml = document.querySelector('.skill1');
+        elementhtml.classList.add('animate__animated', 'animate__zoomInUp');
+        elementhtml.style.animationDuration = '1.25s';
+
+        const elementcss = document.querySelector('.skill2');
+        elementcss.classList.add('animate__animated', 'animate__zoomInUp');
+        elementcss.style.animationDuration = '1.5s';
+
+        const elementjs = document.querySelector('.skill3');
+        elementjs.classList.add('animate__animated', 'animate__zoomInUp');
+        elementjs.style.animationDuration = '1.75s';
+
+        const elementbd = document.querySelector('.skill4');
+        elementbd.classList.add('animate__animated', 'animate__zoomInUp');
+        elementbd.style.animationDuration = '2.0s';
+
+        const elementpython = document.querySelector('.skill5');
+        elementpython.classList.add('animate__animated', 'animate__zoomInUp');
+        elementpython.style.animationDuration = '2.25s';
+
+        const elementcsharp = document.querySelector('.skill6');
+        elementcsharp.classList.add('animate__animated', 'animate__zoomInUp');
+        elementcsharp.style.animationDuration = '2.5s';
+
+    }
+});
 
 
 
