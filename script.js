@@ -86,12 +86,12 @@ window.addEventListener('scroll', function() {
 
     if (scrollTop >= triggerPoint && scrollTop < triggerPoint + projetosSection.offsetHeight) {
         const elementimgproj = document.querySelector('.img-proj');
-        elementimgproj.classList.add('animate__animated', 'animate__slideInUp');
-        elementimgproj.style.animationDuration = '2.5s';
+        elementimgproj.classList.add('animate__animated', 'animate__bounceInLeft');
+        elementimgproj.style.animationDuration = '1.5s';
 
         const elementimgproj1 = document.querySelector('.img-proj1');
-        elementimgproj1.classList.add('animate__animated', 'animate__slideInUp');
-        elementimgproj1.style.animationDuration = '2.5s';
+        elementimgproj1.classList.add('animate__animated', 'animate__bounceInRight');
+        elementimgproj1.style.animationDuration = '1.5s';
     }
 });
 
@@ -108,7 +108,7 @@ window.addEventListener('scroll', function() {
     if (scrollTop >= triggerPoint && scrollTop < triggerPoint + habilidadesSection.offsetHeight) {
         const elementtext = document.querySelector('.texto-descricao');
         elementtext.classList.add('animate__animated', 'animate__slideInRight');
-        elementtext.style.animationDuration = '2.5s';
+        elementtext.style.animationDuration = '2.0s';
 
         const elementhtml = document.querySelector('.skill1');
         elementhtml.classList.add('animate__animated', 'animate__zoomInUp');

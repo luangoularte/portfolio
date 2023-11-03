@@ -317,6 +317,10 @@ h2.titulo{
     background-position: 100% 100%;
 }
 
+.img-proj1:hover{
+    background-position: 100% 100%;
+}
+
 .overlay{
     position: absolute;
     top: 0;
