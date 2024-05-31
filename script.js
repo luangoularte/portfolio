@@ -5,13 +5,13 @@
 const skills = document.querySelectorAll('.skill-box');
 const descricao = document.querySelector('.texto-descricao');
 const sobreSkill = [
-                    '<p>HTML</p> <br> <p>É uma linguagem de marcação utilizada na construção de páginas na Web.</p> <br>',
-                    '<p>CSS</p> <br> <p>É um mecanismo para adicionar estilos a uma página web, aplicado diretamente nas tags HTML.</p> <br>',
-                    '<p>JavaScript</p> <br> <p>É uma linguagem de programação. Juntamente com HTML e CSS, é uma das três principais tecnologias da web.</p> <br>',
+                    '<p>Vue JS</p> <br> <p>Vue.js é um framework JavaScript de código-aberto, focado no desenvolvimento de interfaces de usuário e aplicativos de página única.</p> <br>',
+                    '<p>Laravel</p> <br> <p>Laravel é um framework PHP livre e open-source criado por Taylor B. Otwell para o desenvolvimento de sistemas web que utilizam o padrão MVC.</p> <br>',
+                    '<p>Docker</p> <br> <p>Docker é um conjunto de produtos de plataforma como serviço que usam virtualização de nível de sistema operacional para entregar software em pacotes chamados contêineres.</p> <br>',
                     '<p>Banco de Dados SQL</p> <br> <p>É uma linguagem de domínio específico desenvolvida para gerenciar dados relacionais em um sistema de gerenciamento de banco de dados.</p> <br>',
                     '<p>Python</p> <br> <p>É uma linguagem de programação de alto nível, interpretada de script, imperativa, orientada a objetos, funcional, de tipagem dinâmica e forte.</p> <br>',
                     '<p>C#</p> <br> <p>Desenvolvido pela Microsoft, C# é uma linguagem de programação orientada a objetos e orientada a componentes.</p> <br>'
-]
+                ]
 
 skills.forEach(  (elemento, index) => {
     let index1 = index;
