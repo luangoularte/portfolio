@@ -99,7 +99,7 @@ header{
 .container-text .flex{
     align-items: center;
     justify-content: space-between;
-    height: 75vh;
+    height: 100vh;
     padding: 3%;
     margin-bottom: 25vh;
 }
