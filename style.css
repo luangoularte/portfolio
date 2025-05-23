@@ -99,8 +99,9 @@ header{
 .container-text .flex{
     align-items: center;
     justify-content: space-between;
-    height: 100vh;
+    height: 75vh;
     padding: 3%;
+    margin-bottom: 25vh;
 }
 
 .text h3{
@@ -173,12 +174,6 @@ header{
     background-color: #5CE1E6;
     color: #fff;
     transition: 0.5s;
-}
-
-.foto-perfil img{
-    width: 350px;
-    height: auto;
-    animation: float-up-down 2s infinite;
 }
 
 
@@ -477,10 +472,6 @@ footer .line-footer p a{
     .logo img{
         padding: 1%;
      }
-
-    .container-text{
-        padding-top: 200px;
-    }
 
     .container-text .flex{
         padding: 8%;
