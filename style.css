@@ -281,7 +281,7 @@ section.projetos{
 }
 
 section.projetos .flex{
-    gap: 100px;
+    gap: 50px;
     margin-top: 60px;
     margin-bottom: 60px;
 }
@@ -309,27 +309,9 @@ h2.titulo{
     position: relative;
 }
 
-.img-proj1{
-    width: 600px;
-    height: 360px;
-    background-color:  #5CE1E6;
-    color: #000000;
-    background-size: cover;
-    background-position: 50% 0%;
-    border-radius: 40px;
-    transition: 8s;
-    cursor: pointer;
-    position: relative;
-}
-
 .img-proj:hover{
     background-position: 100% 100%;
 }
-
-.img-proj1:hover{
-    background-position: 100% 100%;
-}
-
 .overlay{
     position: absolute;
     top: 0;
@@ -506,11 +488,6 @@ footer .line-footer p a{
     /* PROJETOS */
 
     .img-proj{
-        width: 100%;
-        background-position: center;
-    }
-    
-    .img-proj1{
         width: 100%;
         background-position: center;
     }

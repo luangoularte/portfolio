@@ -5,13 +5,13 @@
 const skills = document.querySelectorAll('.skill-box');
 const descricao = document.querySelector('.texto-descricao');
 const sobreSkill = [
-                    '<p>Vue JS</p> <br> <p>Vue.js é um framework JavaScript de código-aberto, focado no desenvolvimento de interfaces de usuário e aplicativos de página única.</p> <br>',
-                    '<p>Laravel</p> <br> <p>Laravel é um framework PHP livre e open-source criado por Taylor B. Otwell para o desenvolvimento de sistemas web que utilizam o padrão MVC.</p> <br>',
-                    '<p>Docker</p> <br> <p>Docker é um conjunto de produtos de plataforma como serviço que usam virtualização de nível de sistema operacional para entregar software em pacotes chamados contêineres.</p> <br>',
-                    '<p>Banco de Dados SQL</p> <br> <p>É uma linguagem de domínio específico desenvolvida para gerenciar dados relacionais em um sistema de gerenciamento de banco de dados.</p> <br>',
-                    '<p>Git</p> <br> <p>Git é um sistema de controle de versão distribuído, usado para gerenciar o histórico de mudanças em arquivos de um projeto.</p> <br>',
-                    '<p>Linux</p> <br> <p>Linux é um sistema operacional gratuito e de código aberto, usado em computadores, servidores e celulares, conhecido por sua segurança, estabilidade e flexibilidade.</p> <br>'
-                ]
+    '<p>Vue JS</p> <br> <p>Vue.js é um framework JavaScript de código-aberto, focado no desenvolvimento de interfaces de usuário e aplicativos de página única.</p> <br>',
+    '<p>Laravel</p> <br> <p>Laravel é um framework PHP livre e open-source criado por Taylor B. Otwell para o desenvolvimento de sistemas web que utilizam o padrão MVC.</p> <br>',
+    '<p>Docker</p> <br> <p>Docker é um conjunto de produtos de plataforma como serviço que usam virtualização de nível de sistema operacional para entregar software em pacotes chamados contêineres.</p> <br>',
+    '<p>Postgres</p> <br> <p>É um sistema de gerenciamento de banco de dados relacional de objetos (SGBDRO) de código aberto, conhecido por sua robustez, confiabilidade e recursos avançados. </p> <br>',
+    '<p>Git</p> <br> <p>Git é um sistema de controle de versão distribuído, usado para gerenciar o histórico de mudanças em arquivos de um projeto.</p> <br>',
+    '<p>Linux</p> <br> <p>Linux é um sistema operacional gratuito e de código aberto, usado em computadores, servidores e celulares, conhecido por sua segurança, estabilidade e flexibilidade.</p> <br>'
+]
 
 skills.forEach(  (elemento, index) => {
     let index1 = index;
@@ -82,16 +82,20 @@ window.addEventListener('scroll', function() {
     const projetosSection = document.getElementById('projetos');
     const scrollTop = window.scrollY;
     const offsetTop = projetosSection.offsetTop;
-    const triggerPoint = offsetTop - 400; // 
+    const triggerPoint = offsetTop - 400; 
 
     if (scrollTop >= triggerPoint && scrollTop < triggerPoint + projetosSection.offsetHeight) {
-        const elementimgproj = document.querySelector('.img-proj');
+        const elementimgproj = document.querySelector('.img-proj.automacao');
         elementimgproj.classList.add('animate__animated', 'animate__bounceInLeft');
         elementimgproj.style.animationDuration = '1.5s';
 
-        const elementimgproj1 = document.querySelector('.img-proj1');
-        elementimgproj1.classList.add('animate__animated', 'animate__bounceInRight');
+        const elementimgproj1 = document.querySelector('.img-proj.analise');
+        elementimgproj1.classList.add('animate__animated', 'animate__bounceInUp');
         elementimgproj1.style.animationDuration = '1.5s';
+
+        const elementimgproj2 = document.querySelector('.img-proj.eventos');
+        elementimgproj2.classList.add('animate__animated', 'animate__bounceInRight');
+        elementimgproj2.style.animationDuration = '1.5s';
     }
 });
 
@@ -150,7 +154,7 @@ window.addEventListener('load', () => {
   window.addEventListener("resize", resizeCanvas);
   resizeCanvas();
 
-  const numStars = 150;
+  const numStars = 250;
   const stars = [];
 
   for (let i = 0; i < numStars; i++) {
